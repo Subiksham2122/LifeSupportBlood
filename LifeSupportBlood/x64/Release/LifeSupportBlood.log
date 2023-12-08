@@ -1,0 +1,10 @@
+﻿  LifeSupportBlood.cpp
+C:\Users\Monish Kumar R\source\repos\LifeSupportBlood\LifeSupportBlood\LifeSupportBlood.cpp(66,12): warning C4101: 'n': unreferenced local variable
+C:\Users\Monish Kumar R\source\repos\LifeSupportBlood\LifeSupportBlood\LifeSupportBlood.cpp(406,18): warning C4101: 'c': unreferenced local variable
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 48 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+C:\Users\Monish Kumar R\source\repos\LifeSupportBlood\LifeSupportBlood\LifeSupportBlood.cpp(375): error C4716: 'donor::display': must return a value
+C:\Users\Monish Kumar R\source\repos\LifeSupportBlood\LifeSupportBlood\LifeSupportBlood.cpp(83): error C4716: 'patient::save': must return a value
+C:\Users\Monish Kumar R\source\repos\LifeSupportBlood\LifeSupportBlood\LifeSupportBlood.cpp(330): error C4716: 'donor::save': must return a value
+LINK : fatal error LNK1257: code generation failed
