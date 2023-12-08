@@ -83,7 +83,185 @@ void patient::save()
 
 void patient::show(int c)
 {
-    // Code for displaying and updating blood bank goes here...
+    cout << "Available blood groups compatible with the entered blood group:" << endl;
+    if (c == 0)
+    {
+        cout << "A +ve:" << blood_bank::bloodgroup[0] << endl;
+        cout << "A -ve:" << blood_bank::bloodgroup[4] << endl;
+        cout << "O +ve:" << blood_bank::bloodgroup[1] << endl;
+        cout << "O -ve:" << blood_bank::bloodgroup[5] << endl;
+
+        if (blood_bank::bloodgroup[0] > 0)
+            blood_bank::bloodgroup[0]--;
+        else if (blood_bank::bloodgroup[4] > 0)
+            blood_bank::bloodgroup[4]--;
+        else if (blood_bank::bloodgroup[1] > 0)
+            blood_bank::bloodgroup[2]--;
+        else if (blood_bank::bloodgroup[5] > 0)
+            blood_bank::bloodgroup[6]--;
+        else
+            cout << "Compatible blood group not available";
+
+    }
+
+    else if (c == 1)
+    {
+        cout << "O +ve:" << blood_bank::bloodgroup[1] << endl;
+        cout << "O -ve:" << blood_bank::bloodgroup[5] << endl;
+
+
+        if (blood_bank::bloodgroup[1] > 0)
+            blood_bank::bloodgroup[1]--;
+        else if (blood_bank::bloodgroup[5] > 0)
+            blood_bank::bloodgroup[5]--;
+        else
+            cout << "Compatible blood group not available";
+
+
+    }
+
+    else if (c == 2)
+    {
+        cout << "B +ve:" << blood_bank::bloodgroup[2] << endl;
+        cout << "B -ve:" << blood_bank::bloodgroup[6] << endl;
+        cout << "O +ve:" << blood_bank::bloodgroup[1] << endl;
+        cout << "O -ve:" << blood_bank::bloodgroup[5] << endl;
+
+        if (blood_bank::bloodgroup[2] > 0)
+            blood_bank::bloodgroup[2]--;
+        else if (blood_bank::bloodgroup[6] > 0)
+            blood_bank::bloodgroup[6]--;
+
+        else if (blood_bank::bloodgroup[1] > 0)
+            blood_bank::bloodgroup[1]--;
+        else if (blood_bank::bloodgroup[5] > 0)
+            blood_bank::bloodgroup[5]--;
+        else
+            cout << "Compatible blood group not available";
+
+    }
+
+    else if (c == 3)
+    {
+        cout << "A +ve:" << blood_bank::bloodgroup[0] << endl;
+        cout << "A -ve:" << blood_bank::bloodgroup[4] << endl;
+        cout << "B +ve:" << blood_bank::bloodgroup[2] << endl;
+        cout << "B -ve:" << blood_bank::bloodgroup[6] << endl;
+        cout << "AB +ve:" << blood_bank::bloodgroup[3] << endl;
+        cout << "AB -ve:" << blood_bank::bloodgroup[7] << endl;
+        cout << "O +ve:" << blood_bank::bloodgroup[1] << endl;
+        cout << "O -ve:" << blood_bank::bloodgroup[5] << endl;
+
+        if (blood_bank::bloodgroup[0] > 0)
+            blood_bank::bloodgroup[0]--;
+        else if (blood_bank::bloodgroup[4] > 0)
+            blood_bank::bloodgroup[4]--;
+        else if (blood_bank::bloodgroup[2] > 0)
+            blood_bank::bloodgroup[2]--;
+        else if (blood_bank::bloodgroup[6] > 0)
+            blood_bank::bloodgroup[6]--;
+        else if (blood_bank::bloodgroup[3] > 0)
+            blood_bank::bloodgroup[3]--;
+        else if (blood_bank::bloodgroup[7] > 0)
+            blood_bank::bloodgroup[7]--;
+        else if (blood_bank::bloodgroup[1] > 0)
+            blood_bank::bloodgroup[1]--;
+        else if (blood_bank::bloodgroup[5] > 0)
+            blood_bank::bloodgroup[5]--;
+        else
+            cout << "Compatible blood group not available";
+
+
+    }
+    else if (c == 4)
+    {
+        cout << "A -ve:" << blood_bank::bloodgroup[4] << endl;
+        cout << "O -ve:" << blood_bank::bloodgroup[5] << endl;
+
+        if (blood_bank::bloodgroup[4] > 0)
+            blood_bank::bloodgroup[4]--;
+
+        else if (blood_bank::bloodgroup[5] > 0)
+            blood_bank::bloodgroup[5]--;
+
+        else
+            cout << "Compatible blood group not available";
+
+    }
+
+    else if (c == 5)
+    {
+        cout << "B -ve:" << blood_bank::bloodgroup[6] << endl;
+        cout << "O -ve:" << blood_bank::bloodgroup[5] << endl;
+
+        if (blood_bank::bloodgroup[6] > 0)
+            blood_bank::bloodgroup[6]--;
+        else if (blood_bank::bloodgroup[5] > 0)
+            blood_bank::bloodgroup[5]--;
+        else
+            cout << "Compatible blood group not available";
+
+
+    }
+
+    else if (c == 6)
+    {
+        cout << "A +ve:" << blood_bank::bloodgroup[0] << endl;
+        cout << "A -ve:" << blood_bank::bloodgroup[4] << endl;
+        cout << "B +ve:" << blood_bank::bloodgroup[2] << endl;
+        cout << "B -ve:" << blood_bank::bloodgroup[6] << endl;
+        cout << "AB +ve:" << blood_bank::bloodgroup[3] << endl;
+        cout << "AB -ve:" << blood_bank::bloodgroup[7] << endl;
+        cout << "O +ve:" << blood_bank::bloodgroup[1] << endl;
+        cout << "O -ve:" << blood_bank::bloodgroup[5] << endl;
+
+
+        if (blood_bank::bloodgroup[0] > 0)
+            blood_bank::bloodgroup[0]--;
+        else if (blood_bank::bloodgroup[4] > 0)
+            blood_bank::bloodgroup[4]--;
+        else if (blood_bank::bloodgroup[2] > 0)
+            blood_bank::bloodgroup[2]--;
+        else if (blood_bank::bloodgroup[6] > 0)
+            blood_bank::bloodgroup[6]--;
+        else if (blood_bank::bloodgroup[3] > 0)
+            blood_bank::bloodgroup[3]--;
+        else if (blood_bank::bloodgroup[7] != 0)
+            blood_bank::bloodgroup[7]--;
+        else if (blood_bank::bloodgroup[1] > 0)
+            blood_bank::bloodgroup[1]--;
+        else if (blood_bank::bloodgroup[5] > 0)
+            blood_bank::bloodgroup[5]--;
+        else
+            cout << "Compatible blood group not available";
+
+    }
+
+    else if (c == 7)
+    {
+        cout << "A -ve:" << blood_bank::bloodgroup[4] << endl;
+        cout << "B -ve:" << blood_bank::bloodgroup[6] << endl;
+        cout << "O -ve:" << blood_bank::bloodgroup[5] << endl;
+        cout << "AB -ve:" << blood_bank::bloodgroup[7] << endl;
+
+
+        if (blood_bank::bloodgroup[4] > 0)
+            blood_bank::bloodgroup[4]--;
+
+        else if (blood_bank::bloodgroup[6] > 0)
+            blood_bank::bloodgroup[6]--;
+
+        else if (blood_bank::bloodgroup[5] > 0)
+            blood_bank::bloodgroup[5]--;
+
+        else if (blood_bank::bloodgroup[7] > 0)
+            blood_bank::bloodgroup[7]--;
+        else
+            cout << "Compatible blood group not available";
+
+
+    }
+
 }
 
 class donor
@@ -146,7 +324,45 @@ void donor::save()
 
 void donor::display()
 {
-    // Code for displaying donor information goes here...
+    cout << "name:";
+    cout << name << endl;
+
+    cout << "Date(DD MM YY):";
+    cout << date.day << " ";
+    cout << date.month << " ";
+    cout << date.year << endl;
+
+    cout << "Blood group:";
+
+    switch (c)
+    {
+        // A, O+, B+, AB+, A-, O-, B-, AB-
+    case 0:
+        cout << "0 = A positive" << endl;
+        break;
+    case 1:
+        cout << "1 = O positive" << endl;
+        break;
+    case 2:
+        cout << "2 = B positive" << endl;
+        break;
+    case 3:
+        cout << "3 = AB positive" << endl;
+        break;
+    case 4:
+        cout << "4 = A negative" << endl;
+        break;
+    case 5:
+        cout << "5 = O negative" << endl;
+        break;
+    case 6:
+        cout << "6 = B negative" << endl;
+        break;
+    case 7:
+        cout << "7 = AB negative" << endl;
+    }
+
+    cout << "Packets of blood:" << x << endl;
 }
 
 int main()
